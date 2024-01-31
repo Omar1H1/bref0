@@ -13,7 +13,7 @@ if (nombre1 !== null && nombre2 !== null) {
 //2
 
 function nombrePair(): void {
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i <= 100; i++) {
       if (!(i % 2)) {
         console.log(i);
       }
@@ -54,6 +54,13 @@ if (!isNaN(chiffre)) {
   console.log("Veuillez entrer un chiffre valide.");
 }
 
+//7
+
+window.addEventListener("load", function () {
+  let titre = document.querySelector("h1");
+  titre.style.color = "red";
+});
+
 //8
 
 let petitTableau1: string[] = ["un", "deux", "trois"];
@@ -62,6 +69,17 @@ for (let i: number = 0; i < petitTableau1.length; i++) {
   console.log(petitTableau1[i]);
 }
 
+//9
+
+let petitTableau2 : Array<string> = ["quatre", "cinq", "six"];
+let body = document.body;
+for (let i : number = 0; i < petitTableau2.length; i++) {
+  let div = document.createElement("div");
+  div.textContent = petitTableau2[i];
+  document.body.appendChild(div);
+}
+
+
 //10
 
-let grandTableau: Array<number> = petitTableau1.concat(petitTableau2);
+let grandTableau: Array<string> = petitTableau1.concat(petitTableau2);
